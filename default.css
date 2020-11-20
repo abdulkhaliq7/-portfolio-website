@@ -425,6 +425,7 @@ h6 { font-size: 16px;}
 .about {
     height: 300px;
     overflow: auto;
+    margin-top: 10px;
 }
 
 #modal-title {
@@ -492,6 +493,10 @@ h6 { font-size: 16px;}
     border-radius:5px ;
     padding: 5px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
 
 
 #contact-form {
@@ -584,3 +589,22 @@ h6 { font-size: 16px;}
     }
 }
 
+@media screen and (max-width: 700px) {
+    .modal-wrapper {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .modal-image {
+        display: none;
+    }
+
+    .about {
+        height: 250px;
+        overflow: auto;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+
+}
