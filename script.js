@@ -76,7 +76,7 @@ function outsideClick(e){
 
 //? Get modal element
 let modal2 = document.getElementsByClassName("modal")[1];
-console.log(modal2)
+// console.log(modal2)
 //? Get open modal button 
 let modalBtn2 = document.getElementsByClassName("submit-btn")[1]
 //? Get close button
