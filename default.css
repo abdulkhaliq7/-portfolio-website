@@ -389,6 +389,31 @@ h6 { font-size: 16px;}
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  .modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: auto; */
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: auto; */
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+
   .modal-wrapper {
     margin: 7% auto;
     width: 600px;
@@ -427,6 +452,8 @@ h6 { font-size: 16px;}
     overflow: auto;
     margin-top: 10px;
 }
+
+
 
 #modal-title {
     margin-top: 20px;
@@ -528,7 +555,17 @@ h6 { font-size: 16px;}
     font-size: 14px;
 }
 
-#submit-btn {
+.submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: var(--buttonColor);
+    border: none;
+}
+
+#submit-btn2 {
     margin-top: 10px;
     width: 100%;
     padding-top: 10px;

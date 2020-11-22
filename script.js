@@ -40,9 +40,9 @@ function setTheme(mode) {
 
 
 //? Get modal element
-let modal = document.getElementById("simple-modal");
+let modal = document.getElementsByClassName("modal")[0];
 //? Get open modal button 
-let modalBtn = document.getElementById("submit-btn")
+let modalBtn = document.getElementsByClassName("submit-btn")[0]
 //? Get close button
 let closeBtn = document.getElementsByClassName("close-btn")[0]
 
@@ -70,3 +70,77 @@ function outsideClick(e){
     modal.style.display = 'none'
     }
 }
+
+
+//? Model 2
+
+//? Get modal element
+let modal2 = document.getElementsByClassName("modal")[1];
+console.log(modal2)
+//? Get open modal button 
+let modalBtn2 = document.getElementsByClassName("submit-btn")[1]
+//? Get close button
+let closeBtn2 = document.getElementsByClassName("close-btn")[1]
+
+//? Listen for open click
+modalBtn2.addEventListener('click', openModel2)
+//? Listen for close click
+closeBtn2.addEventListener('click', closeModel2)
+//? Listen for outside click
+window.addEventListener('click', outsideClick2)
+
+
+//? Function to open modal
+function openModel2(){
+    modal2.style.display = 'block'
+}
+
+//? Function to close modal
+function closeModel2(){
+    modal2.style.display = 'none'
+}
+
+//? Function to close modal if ouside click
+function outsideClick2(e){
+    if(e.target == modal2){
+    modal2.style.display = 'none'
+    }
+}
+
+
+//? Model 3
+
+//? Get modal element
+let modal3 = document.getElementsByClassName("modal")[2];
+//? Get open modal button 
+let modalBtn3 = document.getElementsByClassName("submit-btn")[2]
+//? Get close button
+let closeBtn3 = document.getElementsByClassName("close-btn")[2]
+
+//? Listen for open click
+modalBtn3.addEventListener('click', openModel3)
+//? Listen for close click
+closeBtn3.addEventListener('click', closeModel3)
+//? Listen for outside click
+window.addEventListener('click', outsideClick3)
+
+
+//? Function to open modal
+function openModel3(){
+    modal3.style.display = 'block'
+}
+
+//? Function to close modal
+function closeModel3(){
+    modal3.style.display = 'none'
+}
+
+//? Function to close modal if ouside click
+function outsideClick3(e){
+    if(e.target == modal3){
+    modal3.style.display = 'none'
+    }
+}
+
+
+
