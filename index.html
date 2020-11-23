@@ -259,7 +259,7 @@
 
     </section>
 
-    <section id="my-form" class="s2">
+    <section action='post' data-netlify="true" id="my-form" class="s2">
         <div class="main-container">
             <h3 style="text-align: center;">Get in Touch</h3>
             <form  id="contact-form">
@@ -274,7 +274,8 @@
 
                 <label>Message</label>
                 <textarea type="text" name="message" class="input-field"> </textarea>
-    
+
+                <div data-netlify-recaptcha="true"></div>
                 <input id="submit-btn" type="submit" value="Send">
             </form>
         </div>
