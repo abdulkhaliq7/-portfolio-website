@@ -142,5 +142,7 @@ function outsideClick3(e){
     }
 }
 
+gsap.from('.greeting-wrapper', { duration: 2, y: -220, opacity: 0, ease: Power3 })
+
 
 
