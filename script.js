@@ -142,7 +142,7 @@ function outsideClick3(e){
     }
 }
 
-gsap.from('.greeting-wrapper', { duration: 2, y: -220, opacity: 0, ease: Power3 })
-
-
-
+// gsap.from('.greeting-wrapper', { duration: 2, x: -2000, opacity: 0, ease: Power3 })
+gsap.from('.do1', { duration: 0.5, y: 570, opacity: 0, ease: Power3 })
+gsap.from('.do2', { duration: 0.5, y: 570, opacity: 0, ease: Power3, delay:0.5 })
+gsap.from('.left-column', { duration: 0.5, y: 570, opacity: 0, ease: Power3, delay:0.5 })
