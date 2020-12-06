@@ -21,51 +21,12 @@ body * {
     transition: 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6, strong {
+h1, h2, h3, h4, h5, h6, strong, nav {
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
 
 }
-
-/* h1 {
-    position: relative;
-    overflow: hidden;
-}
-
-h1:before {
-    content: '';
-    position: absolute;
-    left: 120%;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent 0%, var(--mainColor) 5%, var(--mainColor) 100%);
-    animation: animate 7s linear forwards;
-}
-
-@keyframes animate {
-    0% {
-        left:-20%
-    }
-    50% {
-        left:120%
-    }
-    100% {
-        left:-20%
-    }
-} */
-
-/* h1 {
-    letter-spacing: 8px;
-    animation:text 3s 1;
-} 
-
-@keyframes text {
-    0% {
-        letter-spacing: 0px;
-       
-    }
-}  */
 
 p, li, span, label, input, textarea {
     color: var(--secondaryText);
@@ -143,7 +104,7 @@ h6 { font-size: 16px;}
     
 }
 
-#navigation a {
+/* #navigation a {
     color: var(--mainText);
     margin-right: 12px;
 }
@@ -157,6 +118,91 @@ h6 { font-size: 16px;}
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px   ;
+} */
+
+nav {
+/* padding: 10px; */
+width: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+/* border-radius: 3px; */
+transition: width 0.6s linear;
+}
+
+nav.active {
+width: 260px;
+font-size: 12px;
+font-weight: 700;
+}
+
+nav ul {
+display: flex;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 0;
+transition: width 0.6s linear;
+}
+
+nav.active ul {
+width: 100%;
+}
+
+nav ul li {
+transform: rotateY(0deg);
+opacity: 0;
+transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+nav.active ul li {
+opacity: 1;
+transform: rotateY(360deg);
+}
+
+nav ul a {
+position: relative;
+color: #000;
+text-decoration: none;
+margin: 0 5px;
+text-transform: uppercase;
+}
+
+.icon {
+background-color: var(--mainColor);
+border: 0;
+cursor: pointer;
+padding: 0;
+position: relative;
+height: 30px;
+width: 30px;
+}
+
+.icon:focus {
+outline: 0;
+}
+  
+.icon .line {
+background-color: var(--mainText);
+height: 2px;
+width: 20px;
+position: absolute;
+top: 10px;
+left: -5px;
+transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+top: auto;
+bottom: 10px;
+}
+
+nav.active .icon .line1 {
+transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+transform: rotate(765deg) translateY(-5.5px);
 }
 
 .dots-wrapper {
@@ -201,6 +247,7 @@ h6 { font-size: 16px;}
     height: 200px;
     width: 200px;
     object-fit: cover;
+    /* object-position: middle right; */
     border: 2px solid var(--borderColor);
 }
 

@@ -142,6 +142,11 @@ function outsideClick3(e){
     }
 }
 
+const toggle = document.getElementById('toggle')
+const nav = document.getElementById('nav')
+
+toggle.addEventListener('click', () => nav.classList.toggle('active'))
+
 // gsap.from('.greeting-wrapper', { duration: 2, x: -2000, opacity: 0, ease: Power3 })
 // gsap.from('.do1', { duration: 0.5, y: 570, opacity: 0, ease: Power3 })
 // gsap.from('.do2', { duration: 0.5, y: 570, opacity: 0, ease: Power3, delay:0.5 })
