@@ -162,7 +162,7 @@ transform: rotateY(360deg);
 
 nav ul a {
 position: relative;
-color: #000;
+color: var(--mainText);
 text-decoration: none;
 margin: 0 5px;
 text-transform: uppercase;
@@ -355,10 +355,11 @@ transform: rotate(765deg) translateY(-5.5px);
 
 .about-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 800px));
+    padding-left: 17%;
     padding-top: 50px; 
     padding-bottom: 50px;
-    gap: 100px;
+    /* gap: 100px; */
 }
 
 #skills {
@@ -406,7 +407,7 @@ transform: rotate(765deg) translateY(-5.5px);
     border-radius: 5px 5px 0 0;
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: fit;
 }
 
 .post-preview {
@@ -507,7 +508,7 @@ transform: rotate(765deg) translateY(-5.5px);
   }
 
 #sub-title {
-    margin: 0 0 0 10px;
+    margin: 0 0 15px 10px;
     color: black;
 }
   
@@ -672,6 +673,9 @@ transform: rotate(765deg) translateY(-5.5px);
     .right-column {
         justify-content: center;
         
+    }
+    .about-wrapper {
+        padding-left: 0%;
     }
 }
 
