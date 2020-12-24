@@ -177,6 +177,40 @@ function outsideClick4(e){
     }
 }
 
+//? Model 5
+
+//? Get modal element
+let modal5 = document.getElementsByClassName("modal")[4];
+//? Get open modal button 
+let modalBtn5 = document.getElementsByClassName("submit-btn")[4]
+//? Get close button
+let closeBtn5 = document.getElementsByClassName("close-btn")[4]
+
+//? Listen for open click
+modalBtn5.addEventListener('click', openModel5)
+//? Listen for close click
+closeBtn5.addEventListener('click', closeModel5)
+//? Listen for outside click
+window.addEventListener('click', outsideClick5)
+
+
+//? Function to open modal
+function openModel5(){
+    modal5.style.display = 'block'
+}
+
+//? Function to close modal
+function closeModel5(){
+    modal5.style.display = 'none'
+}
+
+//? Function to close modal if ouside click
+function outsideClick5(e){
+    if(e.target == modal5){
+    modal5.style.display = 'none'
+    }
+}
+
 const toggle = document.getElementById('toggle')
 const nav = document.getElementById('nav')
 
