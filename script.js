@@ -245,6 +245,80 @@ function outsideClick6(e){
     }
 }
 
+//? Model 7
+
+//? Get modal element
+let modal7 = document.getElementsByClassName("modal")[6];
+//? Get open modal button 
+let modalBtn7 = document.getElementsByClassName("submit-btn")[6]
+//? Get close button
+let closeBtn7 = document.getElementsByClassName("close-btn")[6]
+
+//? Listen for open click
+modalBtn7.addEventListener('click', openModel7)
+//? Listen for close click
+closeBtn7.addEventListener('click', closeModel7)
+//? Listen for outside click
+window.addEventListener('click', outsideClick7)
+
+
+//? Function to open modal
+function openModel7(){
+    modal7.style.display = 'block'
+}
+
+//? Function to close modal
+function closeModel7(){
+    modal7.style.display = 'none'
+}
+
+//? Function to close modal if ouside click
+function outsideClick7(e){
+    if(e.target == modal7){
+    modal7.style.display = 'none'
+    }
+}
+
+
+//? Model 8
+
+//? Get modal element
+let modal8 = document.getElementsByClassName("modal")[7];
+//? Get open modal button 
+let modalBtn8 = document.getElementsByClassName("submit-btn")[7]
+//? Get close button
+let closeBtn8 = document.getElementsByClassName("close-btn")[7]
+
+//? Listen for open click
+modalBtn8.addEventListener('click', openModel8)
+//? Listen for close click
+closeBtn8.addEventListener('click', closeModel8)
+//? Listen for outside click
+window.addEventListener('click', outsideClick8)
+
+
+//? Function to open modal
+function openModel8(){
+    modal8.style.display = 'block'
+}
+
+//? Function to close modal
+function closeModel8(){
+    modal8.style.display = 'none'
+}
+
+//? Function to close modal if ouside click
+function outsideClick8(e){
+    if(e.target == modal8){
+    modal8.style.display = 'none'
+    }
+}
+
+
+
+
+
+
 const toggle = document.getElementById('toggle')
 const nav = document.getElementById('nav')
 
