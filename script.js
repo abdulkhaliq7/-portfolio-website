@@ -350,6 +350,41 @@ function outsideClick9(e){
 }
 
 
+//? Model 10
+
+//? Get modal element
+let modal10 = document.getElementsByClassName("modal")[9];
+//? Get open modal button 
+let modalBtn10 = document.getElementsByClassName("submit-btn")[9]
+//? Get close button
+let closeBtn10 = document.getElementsByClassName("close-btn")[9]
+
+//? Listen for open click
+modalBtn10.addEventListener('click', openModel10)
+//? Listen for close click
+closeBtn10.addEventListener('click', closeModel10)
+//? Listen for outside click
+window.addEventListener('click', outsideClick10)
+
+
+//? Function to open modal
+function openModel10(){
+    modal10.style.display = 'block'
+}
+
+//? Function to close modal
+function closeModel10(){
+    modal10.style.display = 'none'
+}
+
+//? Function to close modal if ouside click
+function outsideClick10(e){
+    if(e.target == modal10){
+    modal10.style.display = 'none'
+    }
+}
+
+
 
 
 
